@@ -5,22 +5,22 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-success-100: #49de50;
-  --color-success-200: #42c748;
-  --color-destructive-100: #f75353;
-  --color-destructive-200: #c44141;
+  --color-success-100: #2dd4bf; /* teal-400 */
+  --color-success-200: #14b8a6; /* teal-600 */
+  --color-destructive-100: #f87171; /* red-400 */
+  --color-destructive-200: #dc2626; /* red-600 */
 
-  --color-primary-100: #dddfff;
-  --color-primary-200: #cac5fe;
+  --color-primary-100: #a7f3d0; /* teal-200 */
+  --color-primary-200: #2dd4bf; /* teal-400 */
 
-  --color-light-100: #d6e0ff;
-  --color-light-400: #6870a6;
-  --color-light-600: #4f557d;
-  --color-light-800: #24273a;
+  --color-light-100: #e0f2fe; /* sky-100 */
+  --color-light-400: #38bdf8; /* sky-400 */
+  --color-light-600: #0ea5e9; /* sky-600 */
+  --color-light-800: #0369a1; /* sky-800 */
 
-  --color-dark-100: #020408;
-  --color-dark-200: #27282f;
-  --color-dark-300: #242633;
+  --color-dark-100: #0f172a; /* slate-900 */
+  --color-dark-200: #334155; /* slate-700 */
+  --color-dark-300: #64748b; /* slate-500 */
 
   --font-mona-sans: "Mona Sans", sans-serif;
 
@@ -29,8 +29,8 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: #f0fdfa; /* teal-50 */
+  --foreground: #0f172a; /* slate-900 */
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -63,8 +63,8 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
+  --background: #0f172a; /* slate-900 */
+  --foreground: #a7f3d0; /* teal-200 */
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
@@ -295,11 +295,11 @@
 }
 
 @utility dark-gradient {
-  @apply bg-gradient-to-b from-[#1A1C20] to-[#08090D];
+  @apply bg-gradient-to-b from-[#0f766e] to-[#0e7490]; /* teal-700 to sky-700 */
 }
 
 @utility border-gradient {
-  @apply bg-gradient-to-b from-[#4B4D4F] to-[#4B4D4F33];
+  @apply bg-gradient-to-b from-[#38bdf8] to-[#a7f3d0]; /* sky-400 to teal-200 */
 }
 
 @utility pattern {
@@ -307,11 +307,11 @@
 }
 
 @utility blue-gradient-dark {
-  @apply bg-gradient-to-b from-[#171532] to-[#08090D];
+  @apply bg-gradient-to-b from-[#0f766e] to-[#0e7490]; /* teal-700 to sky-700 */
 }
 
 @utility blue-gradient {
-  @apply bg-gradient-to-l from-[#FFFFFF] to-[#CAC5FE];
+  @apply bg-gradient-to-l from-[#a7f3d0] to-[#38bdf8]; /* teal-200 to sky-400 */
 }
 
 @utility flex-center {

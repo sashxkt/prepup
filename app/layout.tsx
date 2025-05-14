@@ -21,6 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <title>prep up</title>
+        {/* ...other head tags... */}
+      </head>
       <body className={`${monaSans.className} antialiased pattern`}>
         {children}
 
